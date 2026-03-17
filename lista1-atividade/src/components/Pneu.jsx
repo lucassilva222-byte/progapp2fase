@@ -22,13 +22,13 @@
       return (
         <>
           <h1>PRESSÃO DE PNEU</h1>
-          PRESSÃO ATUAL <input type= {Number}
+          PRESSÃO ATUAL <input type='number'
           value={inputPressaoAtual}
           onChange={(e) => setInputPressaoAtual(e.target.value)}
           />
     
          <h2></h2>
-         PRESSÃO ESCOLHIDA <input type= {Number}
+         PRESSÃO ESCOLHIDA <input type='number'
           value={inputPressaoEscolhida}
           onChange={(e) => setInputPressaoEscolhida(e.target.value)}
           />

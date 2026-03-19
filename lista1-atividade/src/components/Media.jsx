@@ -17,23 +17,31 @@ A saída do seu programa deve ser apenas uma linha. Caso o aluno tenha sido apro
 
 */
 
+
 import { useState } from 'react'
 
 function Media() {
 
+    let nome = 7
+
+    nome = 8
+
     const [inputNotaA, setInputNotaA] = useState("0")
     const [inputNotaB, setInputNotaB] = useState("0")
-    const [mediaNotas, setMediaNotas] = useState("")
+    const [mediaNotas, setMediaNotas] = useState("") //mostra na tela a media das notas
     const [situacao, setsituacao] = useState("")
 
     function calcularMedia() {
-        let somaNota
-        somaNota = Number(inputNotaA) + Number(inputNotaB) //Number serve para converte o numero de texto para numeral 
-        setMediaNotas(somaNota / 2)
-        if(setMediaNotas >= 7){
-            setsituacao("Aparovado") // no react tem que ser ente "( )" fica igual ao o "="
-        }else{
-            setsituacao("Reprovado")
+        let media
+        media = (Number(inputNotaA) + Number(inputNotaB))/2
+        setMediaNotas(media) //para mostra na tela  
+        if(media >= 7){
+            setsituacao("Aprovado") // no react tem que ser ente "( )" fica igual ao o "="
+        }else if (media >= 4 & media < 7){
+            setsituacao("Recuperação")
+        }
+        else{
+            setsituacao("reprovado")
         }
     }
 

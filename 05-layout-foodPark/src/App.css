@@ -1,0 +1,33 @@
+.cont-app{
+  min-height: 100vh;
+  display: flex; 
+  flex-direction: column;
+
+}
+
+.cont-header{
+  background-color: brown;
+  /*define a altura como 100 pixel */
+  height: 100px;
+
+  display: flex;
+  justify-content:center;
+  align-items: flex-end;
+
+
+}
+.cont-main{
+  background-color: aliceblue;
+  flex: 1;
+  display: flex;
+}
+
+.botoes-nav{
+  border: nome;
+  padding: 5px;
+  border-radius:5px;
+  background-color: rgb(199, 232, 233)
+}
+.botoes-nav:hover{
+  background-color: rgb(162, 238, 213)
+}

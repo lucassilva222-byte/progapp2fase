@@ -1,0 +1,12 @@
+.cont-home{
+    background-color: rgb(191, 191, 206);
+    flex: 1;
+}
+.cont-produtos{
+    background-color: rgb(207, 201, 192);
+    flex: 1;
+}
+.cont-contato{
+    background-color: brown(64, 226, 43);
+    flex: 1;
+}

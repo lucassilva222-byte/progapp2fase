@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 import './App.css'
 import Compra from './components/Compra.jsx';
+import Cavalo from './components/Cavalo';
 
 function App() {
   const [cavalos, setCavalos] = useState([
@@ -542,8 +543,17 @@ function App() {
         {/* <Compra c={compras[0]} /> */}
       </section>
 
+
       <section>
-        {/* map de carros */}
+      <h2>Lista de cavalo</h2>
+        <div className="lista-cavalos">
+          {
+            cavalos.map((cavalos) => (
+              <Cavalo c={cavalos} key={cavalos.id}/>
+              ))
+            }
+        </div>
+
       </section>
 
       <section>
